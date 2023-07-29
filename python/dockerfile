@@ -1,0 +1,23 @@
+# Use the official Python image as the base image
+FROM python:3.9
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy app.py and other necessary files from the host into the container's working directory
+COPY . /app/
+
+# Install Flask and any other required dependencies
+RUN pip install Flask
+
+# Expose the port on which the Flask app will run
+EXPOSE 5000
+
+# Set the environment variable to tell Flask where the app is
+ENV FLASK_APP=app.py
+
+# Set Flask to run in development mode for this example (change for production)
+ENV FLASK_ENV=development
+
+# Start the Flask app when the container starts
+CMD ["flask", "run", "--host", "0.0.0.0"]
