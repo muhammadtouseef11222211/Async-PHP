@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Define a route and a function to handle the route
 @app.route('/')
 def hello_world():
-    return 'pipeline is updating'
+    return 'pipeline is updating ok'
 
 # Run the application if this script is executed directly
 if __name__ == '__main__':
