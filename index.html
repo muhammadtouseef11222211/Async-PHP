@@ -1,0 +1,77 @@
+	
+	
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Management</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <style>
+        /* Custom inline styles */
+
+        /* Center align the main content */
+        #main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Styling for the analytics section */
+        .analytics-section {
+            background-color: #4a5568;
+            padding-top: 0.75rem;
+        }
+
+        .analytics-header {
+            border-top-left-radius: 1.5rem;
+            background-image: linear-gradient(to right, #1a202c, #2d3748);
+            padding: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+    </style>
+
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('nav_admin.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav_admin').innerHTML = data;
+                });
+        });
+    </script>
+
+</head>
+
+<body class="bg-gray-800 font-sans leading-normal tracking-normal mt-12">
+
+    <header>
+
+
+    <div id="nav_admin"></div>
+
+        <section style="margin-left: 5%; width: 100%;">
+        
+	
+
+
+	
+	
+	</section>
+
+    </header>
+
+
+
+
+</body>
+
+</html>
