@@ -1,52 +1,5 @@
 This project is designed to enhance the performance of an Apache web server through asynchronous PHP scripts and modular architecture. It includes reusable views, async scripts, and backend functionality.
 
-Project Structure
-
-
-├── apache_final_project.zip      # Compressed project file
-├── app
-│   ├── .htaccess                 # Apache configuration for URL rewriting
-│   ├── apache
-│   │   └── run_without_reload.php # Script to run Apache configuration without reload
-│   └── reuseable_views            # Contains reusable view components
-│       ├── footer.php
-│       ├── footer_async.php
-│       ├── footer_form.php
-│       ├── footer_json.php
-│       └── header.php
-├── async_scripts                  # Directory for asynchronous scripts
-├── Backend                        # Backend logic for Apache configuration
-│   ├── apache
-│   │   ├── apache_status.php      # Checks Apache status
-│   │   ├── dbcode                 # Database related scripts
-│   │   │   ├── test.php
-│   │   │   └── test1.php
-│   │   ├── enable.php             # Script to enable modules
-│   │   ├── mods.php               # Module management
-│   │   ├── ports.php              # Port management
-│   │   └── request_mods.php       # Request module status
-├── css                            # CSS files
-│   └── style.php                  # Stylesheet for the application
-├── db.php                         # Database connection file
-├── index.php                      # Main entry point
-├── js                             # JavaScript files
-│   ├── apache.js                  # Main JavaScript logic
-│   └── router_js.php              # JavaScript router
-├── lib                            # Library functions
-│   ├── AsyncRunner.php            # Asynchronous runner class
-│   ├── db_insert.php              # Database insertion logic
-│   └── macro                      # Macro functions for database operations
-│       ├── db_conn.php
-│       ├── include_file.php
-│       ├── macro_db.php
-│       ├── macro_insert.php
-│       └── macro_router.php
-├── router_links                   # Links routing
-│   └── links.php                  # Link management
-└── spaces                         # Data files for configuration
-    ├── apache_ports.csv           # List of Apache ports
-    └── apache_sites.csv           # List of Apache sites
-
 Apache server installed
 PHP installed (with necessary extensions)
 Installation Steps
