@@ -78,3 +78,9 @@ chmod -R 777 /var/www/html/*
 %www-data ALL=(ALL) NOPASSWD: ALL   (add after sudo visudo))
 
 
+
+We're working on an automated vulnerability-finding and attack software using asynchronous PHP. It will gather practical data and launch targeted attacks while adapting based on AI insights. About 30% of the software will be publicly available for scanning and basic attacks, while the rest will remain private for security reasons. Thanks for your interest!
+
+
+
+
